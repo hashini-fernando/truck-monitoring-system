@@ -110,7 +110,7 @@ const ReportTab = () => {
       <div className="summary-card">
       <h3 style={{ color: 'white' }}>
           Total Lorries Dispatched: <span style={{ marginRight: '510px' }}>{records.length}</span>
-          <span style={{ fontSize: '0.9em'}}>Ongoing shift - 8.00 AM to 8.00 PM</span>
+          <span style={{ fontSize: '0.9em'}}>Ongoing Shift - 8.00 AM to 8.00 PM</span>
         </h3>
       </div>
   
