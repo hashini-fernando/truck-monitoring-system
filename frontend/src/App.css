@@ -1,0 +1,64 @@
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #0f172a;
+  color: white;
+}
+
+
+.main-app-content {
+  display: flex;
+  flex: 1;
+ 
+}
+
+
+
+
+.content-area {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 80px);
+}
+
+
+
+
+@media (max-width: 768px) {
+  .main-app-content {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+  }
+}
+
+
+.sidebar {
+  width: 220px;
+  background-color: #1e3a8a;
+  color: white;
+  height: 100vh;
+  padding: 20px;
+ 
+  
+}
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+.sidebar a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 8px 0;
+}
+.sidebar a.active {
+  font-weight: bold;
+  color: #ffd700;
+}
