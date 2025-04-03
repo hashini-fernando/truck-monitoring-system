@@ -1,23 +1,7 @@
 <?php
 
-// connect backend and frontend
-header('Access-Control-Allow-Origin: *');
-header('Access-Control-Allow-Methods: GET');
-header('Access-Control-Allow-Headers: Content-Type');
-header('Content-Type: application/json');
 
-// Database connection
-$servername = "localhost";
-$username = "root";
-$password = "Hashini@123";
-$dbname = "parking_system";
-
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Check connection
-if ($conn->connect_error) {
-    die(json_encode(["status" => "error", "message" => "Connection failed: " . $conn->connect_error]));
-}
+require_once 'db.php';
 
 $stationId = isset($_GET['stationId']) ? $_GET['stationId'] : null;
 $limit = isset($_GET['limit']) ? intval($_GET['limit']) : 100; 

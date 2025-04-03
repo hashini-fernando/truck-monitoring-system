@@ -31,7 +31,7 @@ const QrGenerate = () => {
     }
     const link = document.createElement("a");
     link.href = qr;
-    link.download = `QR_Codes/${vehicleNo}_QRCode.png`; // Suggested path (browser will still ask where to save)
+    link.download = `QR_Codes/${vehicleNo}_QRCode.png`; 
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

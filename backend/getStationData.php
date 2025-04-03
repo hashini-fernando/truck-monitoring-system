@@ -1,23 +1,6 @@
 <?php
 
-
-header('Access-Control-Allow-Origin: *');
-header('Access-Control-Allow-Methods: POST, GET');
-header('Access-Control-Allow-Headers: Content-Type');
-header('Content-Type: application/json'); 
-
-
-$servername = "localhost";
-$username = "root";
-$password = "Hashini@123";
-$dbname = "parking_system";
-
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-
-if ($conn->connect_error) {
-    die(json_encode(["status" => "error", "message" => "Connection failed: " . $conn->connect_error]));
-}
+require_once 'db.php';
 
 
 $data = json_decode(file_get_contents('php://input'), true);
