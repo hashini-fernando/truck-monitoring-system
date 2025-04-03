@@ -5,6 +5,7 @@ import Overview from '../Components/Overview';
 
 import StationReportTab from '../Components/StationReportTab';
 import StationTrendTab from '../Components/StationTrendTab';
+import QrGenerate from '../Components/QrGenerate';
 
 const StationPage = () => {
   const { id } = useParams();
@@ -17,6 +18,7 @@ const StationPage = () => {
       {activeTab === 'overview' && <Overview />}
       {activeTab === 'report' && <StationReportTab />}
       {activeTab === 'trends' && <StationTrendTab />}
+      {activeTab === 'qrgenerate' && <QrGenerate />}
     </div>
   );
 };

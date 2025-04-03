@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "qrcode": "^1.5.4",
     "react-toastify": "^11.0.5",
     "toastify": "^2.0.1"
   }

@@ -3,6 +3,8 @@ import Tabs from '../Components/Tabs';
 import Overview from '../Components/Overview';
 import ReportTab from '../Components/ReportTab';
 import TrendsTab from '../Components/TrendsTab';
+import QrGenerate from '../Components/QrGenerate';
+
 
 const MainDashboard = () => { 
   const [activeTab, setActiveTab] = useState('overview');
@@ -14,6 +16,7 @@ const MainDashboard = () => {
       {activeTab === 'overview' && <Overview />}
       {activeTab === 'report' && <ReportTab />}
       {activeTab === 'trends' && <TrendsTab />}
+      {activeTab === 'qrgenerate' && <QrGenerate />}
     </div>
   );
 };

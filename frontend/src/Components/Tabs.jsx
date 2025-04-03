@@ -24,6 +24,13 @@ const Tabs = ({ activeTab, setActiveTab, title }) => {
         >
           Trends
         </button>
+
+        <button
+          className={activeTab === 'qrgenerate' ? 'active' : ''}
+          onClick={() => setActiveTab('qrgenerate')}
+        >
+          QR Generate
+        </button>
       </div>
     </div>
   );
